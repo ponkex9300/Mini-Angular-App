@@ -1,0 +1,15 @@
+<section>
+  <h2>Listado de Cursos</h2>
+
+  <p *ngIf="courses.length === 0">No hay cursos disponibles.</p>
+
+  <ul *ngIf="courses.length > 0" class="course-list">
+    <li *ngFor="let course of courses" class="course-item">
+      <div>
+        <h3>{{ course.title }}</h3>
+        <p>Nivel: {{ course.level }} | Duracion: {{ course.durationHours }} horas</p>
+      </div>
+      <button type="button" (click)="onSelectCourse(course.id)">Ver detalle</button>
+    </li>
+  </ul>
+</section>

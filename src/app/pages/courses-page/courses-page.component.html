@@ -1,0 +1,7 @@
+<h1>Gestion de Cursos</h1>
+<p>Mini app dummy para practicar fundamentos de Angular.</p>
+
+<app-course-list
+  [courses]="courses"
+  (courseSelected)="goToCourseDetail($event)">
+</app-course-list>

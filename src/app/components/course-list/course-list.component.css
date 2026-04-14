@@ -1,0 +1,19 @@
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  cursor: pointer;
+}

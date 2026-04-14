@@ -1,0 +1,13 @@
+<section *ngIf="course; else notFound">
+  <h1>{{ course.title }}</h1>
+  <p><strong>Nivel:</strong> {{ course.level }}</p>
+  <p><strong>Duracion:</strong> {{ course.durationHours }} horas</p>
+  <p><strong>Descripcion:</strong> {{ course.description }}</p>
+  <a routerLink="/courses">Volver al listado</a>
+</section>
+
+<ng-template #notFound>
+  <h1>Curso no encontrado</h1>
+  <p>El curso solicitado no existe.</p>
+  <a routerLink="/courses">Volver al listado</a>
+</ng-template>
